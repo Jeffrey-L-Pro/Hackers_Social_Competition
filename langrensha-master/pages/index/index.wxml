@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class='main-area'>
+    <view class='main-area-half'>
+      <view class='main-area-quater' bindtap='createRoom'>
+        <image class='icon' src='../../lib/image/icon/createroom.png'></image>
+        <text class='main-nav-text'>创建房间点我</text>
+      </view>
+      <view class='main-area-quater' >
+        <input class='input-roomid' bindblur='inputRoomId' maxlength='8' placeholder='输入房间号' />
+        <view class='main-nav-text' bindtap='enterRoom'><text class='iconfont icon-fangjian'></text>进入房间点我</view>
+      </view>
+    </view>
+
+    <view class='main-area-half'>
+      <view class='main-area-quater' bindtap='navRuleintro'>
+        <image class='icon' src='../../lib/image/icon/gameintro.png'></image>
+        <text class='main-nav-text'>狼人杀介绍</text>
+      </view>
+      <view class='main-area-quater' bindtap='navAbout'>
+        <image class='icon' src='../../lib/image/icon/roleintro.png'></image>
+        <text class='main-nav-text'>关于我们</text>
+      </view>
+    </view>
+  </view>
+</view>

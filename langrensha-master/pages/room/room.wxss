@@ -1,0 +1,61 @@
+/* pages/room/room.wxss */
+
+.roomid-block{
+  height: 300rpx;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.roomid-title{
+  display: block;
+  font-size: 15px;
+}
+.roomid-content{
+  display: block;
+  font-size: 40px;
+}
+
+.refresh-tips{
+  font-size: 15px;
+}
+
+.userinfo-list{
+  display: flex;
+  flex-flow: row wrap;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.role-hide{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  justify-content: center;
+  height: 100rpx;
+  margin: 20px 10px;
+}
+.btn-show-myrole{
+  background-color: #cfcfcf;
+}
+
+.btn-invite,
+.btn-recreate{
+  width: 90%;
+}
+
+.recreate-area{
+  margin-top: 20rpx;
+}

@@ -1,0 +1,35 @@
+<!--pages/room/room.wxml-->
+<view class='container'>
+  <view class='block-container slider-setting'>
+    <text>平民: </text>
+    <slider min='2' max='10' show-value value='{{numPeople}}' bindchange='changePeople'></slider>
+  </view>
+
+  <view class='block-container slider-setting'>
+    <text>狼人: </text>
+    <slider min='2' max='10' show-value value='{{numWerewolf}}' bindchange='changeWerewolf'></slider>
+  </view>
+
+  <view class="weui-grids">
+    <view class='weui-grid grid-content'>预言家<switch checked bindchange='changeSeer' /></view>
+    <view class='weui-grid grid-content'>女巫<switch checked bindchange='changeWitch' /></view>
+    <view class='weui-grid grid-content'>猎人<switch checked bindchange='changeHunter' /></view>
+    <view class='weui-grid grid-content'>守卫<switch bindchange='changeGuard' /></view>
+    <view class='weui-grid grid-content'>丘比特<switch bindchange='changeCupid' /></view>
+    <view class='weui-grid grid-content'>白痴<switch bindchange='changeIdiot' /></view>
+    <view class='weui-grid grid-content'>小女孩<switch bindchange='changeGirl' /></view>
+
+    <view class='weui-grid grid-content' bindtap='navRoleIntro'>
+      <text class='iconfont icon-tuanduijieshao icon'></text>
+      角色介绍
+    </view>
+    <view class='weui-grid grid-content' bindtap='showMore'>
+      <text class='iconfont icon-fangjian icon'></text>
+      more..
+    </view>
+  </view>
+
+  <text class='block-container'>设定人数:{{numTotal}}</text>
+  <button class='weui-btn btn-create' type='primary' bindtap='createRoom'>创建房间</button>
+  
+</view>

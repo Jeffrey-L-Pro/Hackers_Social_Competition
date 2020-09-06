@@ -1,0 +1,43 @@
+/**index.wxss**/
+.container{
+  width: 750rpx;
+  padding-top: 0;
+}
+.page-body{
+  width: 100vw;
+}
+.body-pic{
+  width: 100%;
+}
+.body-pic image{
+  width: 100%;
+}
+.textbody{
+  border-top: 50rpx;
+  width: 100%;
+  font-size: larger;
+  text-align: center;
+  font-weight: bolder;
+  font-family: Agency FB;
+}
+
+.texter_1{
+  color:black;
+}
+.caption-wrap {
+  width:100%;
+  padding-top: 7vw; 
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn{
+  background-color:cadetblue;
+  opacity: 0.8;
+}
+
+page{
+  background-image: url("https://s1.ax1x.com/2020/09/06/wZ3zTg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

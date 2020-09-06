@@ -1,0 +1,49 @@
+/**index.wxss**/
+
+.userinfo {
+  height: 500rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.main-area{
+  width: 100%;
+  height: 650rpx;
+}
+
+.main-area-half{
+  height: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.main-area-quater{
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon{
+  width: 100rpx;
+  height: 100rpx;
+}
+.input-roomid{
+  width: 180rpx;
+  height: 100rpx;
+}
+.main-nav-text{
+  font-size: 20px;
+}
